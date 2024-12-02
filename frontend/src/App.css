@@ -1,0 +1,83 @@
+
+.navbar{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: transparent;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.nav-links a, .nav-links .link {
+  display: inline-block; /* Ensure it behaves like a button */
+  width: auto;
+  margin: 20px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Button text color */
+  font-size: 1rem; /* Adjust text size */
+  padding: 10px 20px; /* Add space inside the button */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #dba239; /* Button background color */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.nav-links a:hover, .nav-links .link:hover {
+  color: #080909;
+}
+.mainnav{
+  margin-left:55%;
+}
+
+.register{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.registercontent{
+  display: flex;
+  flex-direction: column;
+  
+  /* align-items: center; */
+}
+
+
+input{
+  height: 30px;
+  border-radius: 15%;
+  margin: 5px;
+}
+label{
+  margin: 5px;
+}
+button{
+  margin: 20px;
+  border-radius: 20px;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.logincontent{
+  display: flex;
+  flex-direction: column;
+  
+  /* align-items: center; */
+}
+
+.dashboard{
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  font-size: 40px;
+  background-color: #cac45f;
+  margin-left: 265px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: #080909;
+}
