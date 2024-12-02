@@ -3,13 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 
 const Register = () => {
+  const token = localStorage.getItem('registerToken');
   const [formData, setFormData] = useState({
     username: '',
     password: '',
     role: 'user', // Set default role
   });
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
+   const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,6 +19,12 @@ const Register = () => {
       [name]: value,
     }));
   };
+  console.log(token)
+  if(token != null){
+    return (<div className='dashboard'>
+      please first logout then your can register new user
+    </div>)
+}
 
   const handleSubmit = async (e) => {
     e.preventDefault();
