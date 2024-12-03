@@ -7,6 +7,7 @@ import AdminPage from './components/AdminPage';
 import Dashboard from './components/Dashboard';
 import Logout from './components/Logout';
 import './App.css'; 
+import Upload from './components/Upload';
 function App() {
   return (
       <Router>
@@ -17,6 +18,7 @@ function App() {
           <Link to="/register">Go to Register</Link>
           <Link to="/login">Go to Login</Link>
           <Link to="/admin">Go to Admin</Link>            
+          <Link to="/upload">upload feature</Link>
           <Link to="/logout">logout</Link>
           </div>
           </div>
@@ -36,6 +38,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/dashboard" element={<Dashboard />} /> 
+          <Route path="/upload" element={<Upload />} />
           <Route path="/logout" element={<Logout />} /> 
         </Routes>
       </Router>

@@ -2,13 +2,14 @@
 
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Register from './Register';
 const Dashboard = () => {
   const navigate = useNavigate() ;
 
   const userRegister = localStorage.getItem('registerToken') ;
   const role = localStorage.getItem('role') ;
 
-  console.log("i am dashboard calling")
+  navigate('')
   if(role == 'admin'){
     return (
       <div className='dashboard'>

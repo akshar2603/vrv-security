@@ -30,7 +30,7 @@ const Register = () => {
     e.preventDefault();
     try {
       console.log(formData);
-      const token = sessionStorage.getItem('auth_token');
+      const token = localStorage.getItem('registerToken');
       if(token){
         navigate('/dashboard') ;
       }
